@@ -1,54 +1,34 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CALCULADORA</title>
+    <title>Calculadora Simples</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="navbar">
-       <!--coloca essa class como inline, a navbar deixa que eu faço-->
-        <div class="titulo">
-           <h1> CALCULADORA DE SOMA </h1> 
-        </div>
-    </div>
-    
-    <div id="">
 
+    <div class="container">
+        <h1>Calculadora Simples</h1>
+
+        <input type="text" id="num1" placeholder="Digite o primeiro número">
+        <input type="text" id="num2" placeholder="Digite o segundo número">
+
+        <select id="operacao">
+            <option value="+">Soma (+)</option>
+            <option value="-">Subtração (-)</option>
+            <option value="*">Multiplicação (×)</option>
+            <option value="/">Divisão (÷)</option>
+        </select>
+
+        <br><br>
+
+        <button id="calcular">Enter</button>
+        <button id="limpar">Limpar</button>
+
+        <p id="resultado">Seu resultado é: </p>
+        <p id="erro" class="erro"></p>
     </div>
-    
-    <div id="calculadora">
-        <div class="numeros">
-            <h5>01</h5>
-        </div>
-          <div class="numeros">
-            <h5>02</h5>
-        </div>
-          <div class="numeros">
-            <h5>03</h5>
-        </div>
-          <div class="numeros">
-            <h5>04</h5>
-        </div>
-          <div class="numeros">
-            <h5>05</h5>
-        </div>
-          <div class="numeros">
-            <h5>06</h5>
-        </div>
-          <div class="numeros">
-            <h5>07</h5>
-        </div>
-          <div class="numeros">
-            <h5>08</h5>
-        </div>
-          <div class="numeros">
-            <h5>09</h5>
-        </div>
-          <div class="numeros">
-            <h5>00</h5>
-        </div>
-    </div>
-    
+
+    <script src="script.js"></script>
 </body>
 </html>
